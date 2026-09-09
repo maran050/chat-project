@@ -1,0 +1,248 @@
+/*========================================
+  المتغيرات العامة
+========================================*/
+:root {
+  --primary-color: #ffffff;
+}
+
+/*========================================
+  إعدادات عامة
+========================================*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, Arial, sans-serif;
+  direction: rtl;
+}
+
+body {
+  transition: background 0.3s, color 0.3s;
+  color: var(--primary-color);
+}
+
+body.light {
+  background-color: #aebed6;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/*========================================
+  الأزرار وحقول الإدخال
+========================================*/
+input,
+button,
+textarea {
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.input {
+  outline: none;
+  border: none;
+  background-color: #e0e5ec;
+  width: 250px;
+  padding: 15px;
+  color: #6d7582;
+  font-size: 16px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+}
+
+.btn {
+  background-color: #e0e5ec;
+  margin-right: 35px;
+  width: 200px;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #6d7582;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+}
+
+/*========================================
+  صفحات تسجيل الدخول / التسجيل
+========================================*/
+body.login {
+  background-color: #e0e5ec;
+}
+
+.panel.auth {
+  position: relative;
+  top: 130px;
+  right: 40%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(255, 255, 255);
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  width: 350px;
+  backdrop-filter: blur(20px);
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+}
+
+.auth div {
+  padding: 15px;
+}
+
+.sign {
+  width: 350px;
+  background-color: #d9e3f1;
+  box-shadow: 10px 10px 15px #a3b1c6, -10px -10px 20px #ffffff;
+  position: absolute;
+  border-radius: 20px;
+  right: 40%;
+  top: 30px;
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#authTitle {
+  color: #6d7582;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.small {
+  font-size: 13px;
+  padding-right: 10px;
+  background-color: #c5cbdc;
+  width: 150px;
+  border-radius: 20px;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.small a {
+  color: #595e68;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*========================================
+  صفحة الدردشة
+========================================*/
+.chat {
+  flex: 1;
+  display: flex;
+  height: 630px;
+  flex-direction: column;
+  background: none;
+}
+
+.panel{
+  padding-top: 10px;
+}
+
+#chatTitle {
+  font-weight: bold;
+}
+
+.msgs {
+  flex: 1;
+  overflow: auto;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.msg {
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  max-width: 75%;
+  word-break: break-word;
+}
+
+.msg.you {
+  background: #83d2ab;
+  align-self: flex-end;
+}
+
+.msg.other {
+  background: #eef2ff;
+  align-self: flex-start;
+}
+
+.smallmsg {
+  font-size: 13px;
+  color: #666;
+  padding-right: 10px;
+}
+
+.system {
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.controls-send {
+  position: relative;
+  right: 25%;
+  width: 700px;
+}
+
+#btnSend {
+  position: absolute;
+  background-color: rgba(117, 171, 36, 0.838);
+  right: 94%;
+  border-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#msgInput {
+  border-radius: 0;
+  width: 640px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  outline: none;
+}
+
+/*========================================
+  عناصر الملف الشخصي
+========================================*/
+.profile {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: -6px;
+  font-size: 26px;
+  margin-left: 3px;
+  background-color: #d7d2d2;
+}
+
+.profile-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.sitting {
+  width: 40px;
+  border: none;
+  position: fixed;
+  bottom: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+}

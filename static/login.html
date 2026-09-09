@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="./stayle.css">
+</head>
+<body class="login light">
+
+  <!-- روابط التبديل بين تسجيل الدخول والتسجيل -->
+  <div class="sign">
+    <div class="small">
+      <a href="#" id="showLogin">Login</a>
+    </div>
+    <div class="small">
+      <a href="#" id="showRegister">Sign in</a>
+    </div>
+  </div>
+
+  <!-- لوحة المصادقة -->
+  <div class="panel auth">
+    <h3 id="authTitle">تسجيل الدخول</h3>
+
+    <div id="authForms">
+
+      <!-- نموذج تسجيل الدخول -->
+      <div id="loginForm">
+        <div>
+          <input type="text" class="input" id="loginUsername" placeholder="اسم المستخدم">
+        </div>
+        <div>
+          <input type="password" class="input" id="loginPassword" placeholder="كلمة المرور">
+        </div>
+        <div>
+          <button class="btn" id="btnLogin">دخول</button>
+        </div>
+        <div id="authMsg" class="smallmsg"></div>
+      </div>
+
+      <!-- نموذج التسجيل -->
+      <div id="registerForm" class="hidden">
+        <div>
+          <input class="input" id="regUsername" placeholder="اسم المستخدم">
+        </div>
+        <div>
+          <input class="input" id="regEmail" placeholder="البريد الإلكتروني (اختياري)">
+        </div>
+        <div>
+          <input class="input" id="regPassword" type="password" placeholder="كلمة المرور">
+        </div>
+        <div>
+          <button id="btnRegister" class="btn">تسجيل</button>
+        </div>
+        <div id="regMsg" class="smallmsg"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ملف JavaScript -->
+  <script src="./app.js" defer></script>
+
+</body>
+</html>

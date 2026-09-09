@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- أيقونات Bootstrap -->
+  <link rel="stylesheet" href="./../bootstrap-icons-1.13.1/bootstrap-icons.css">
+  <!-- ملف CSS للوحة التحكم -->
+  <link rel="stylesheet" href="./style-dashbord.css">
+</head>
+<body class="dashbord light">
+
+  <!-- القائمة الجانبية -->
+  <div id="menu" class="panal-light menu">
+    <ul>
+      <!-- ملف المستخدم -->
+      <li class="profil">
+        <div class="img-box">
+          <input type="file">
+        </div>
+        <h2 id="username">anas aloraby</h2>
+      </li>
+      <!-- روابط القائمة -->
+      <li>
+        <a href="./localstorg.html">
+          <i class="bi bi-hdd"></i><span>LocalStorage</span>
+        </a>
+      </li>
+      <li>
+        <a href="./sitting.html">
+          <i class="bi bi-database"></i><span>Database</span>
+        </a>
+      </li>
+      <li onclick="logout()" class="log-out">
+        <a href="#"><i class="bi bi-box-arrow-right"></i><span>Log out</span></a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- محتوى الصفحة -->
+  <div class="content">
+
+    <!-- رأس المحتوى -->
+    <div id="title-info" class="panal-light title-info">
+      <div id="sidebar" class="sidbar"><i class="bi bi-list"></i></div>
+      <p>Dashboard</p>
+      <div style="display:flex; align-items:center; gap:10px">
+        <button class="them" id="them">
+          <i id="them-icon" class="bi bi-sun"></i>
+        </button>
+        <input type="color" id="primaryColorPicker" title="اختر اللون الأساسي">
+      </div>
+    </div>
+
+    <!-- إحصائيات المستخدمين والرسائل -->
+    <div class="data-info">
+      <div id="users-box" class="panal-light box">
+        <i class="bi bi-people"></i>
+        <div class="data">
+          <p>Users</p>
+          <span id="usernum">0</span>
+        </div>
+      </div>
+      <div id="chat-box" onclick="openChat()" class="panal-light box">
+        <i class="bi bi-whatsapp"></i>
+        <div class="data">
+          <p>Chats</p>
+          <span id="chatnumber">0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- شريط عرض الصور -->
+    <div class="slider">
+      <div class="slides">
+        <img src="./../img/maran.png" alt="img1">
+        <img src="./../img/amer.png" alt="img2">
+        <img src="./../img/anas.jpg" alt="img3">
+        <img src="./../img/sam.jpg" alt="img4">
+        <img src="./../img/yosef.jpg" alt="img5">
+        <img src="./../img/backgraound.png" alt="img6">
+      </div>
+      <button class="btn prev">&#10094;</button>
+      <button class="btn next">&#10095;</button>
+    </div>
+
+  </div>
+
+  <!-- ملف JavaScript -->
+  <script src="./../app.js" defer></script>
+
+</body>
+</html>

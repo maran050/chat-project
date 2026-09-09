@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samchat</title>
+  <!-- ملف CSS الأساسي -->
+  <link rel="stylesheet" href="./stayle.css">
+  <!-- أيقونات Bootstrap -->
+  <link rel="stylesheet" href="./bootstrap-icons-1.13.1/bootstrap-icons.css">
+</head>
+<body class="light">
+
+  <!-- الحاوية الرئيسية -->
+  <div class="container">
+
+    <!-- لوحة المحادثة -->
+    <div class="panel chat">
+
+      <!-- رأس المحادثة -->
+      <div class="profile-1">
+        <!-- أيقونة المستخدم -->
+        <div onclick="dashBord()" class="profile">
+          <i class="bi bi-person"></i>
+        </div>
+
+        <!-- معلومات المحادثة -->
+        <div>
+          <h3>المحادثة العامة</h3>
+          <div id="status" class="smallmsg">
+            <span id="connState">اخر ظهور</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- صندوق عرض الرسائل -->
+      <div id="msgs" class="msgs"></div>
+
+      <!-- لوحة إرسال الرسائل -->
+      <div class="controls-send">
+        <input id="msgInput" placeholder="اكتب رسالة..." />
+        <button id="btnSend">
+          <i class="bi bi-send"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ملف JavaScript -->
+  <script src="./app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة الإدارة</title>
+  <!-- ربط ملف CSS الخارجي -->
+  <link rel="stylesheet" href="./style-dashbord.css">
+</head>
+<body class="light">
+
+  <!-- رأس الصفحة -->
+  <header>
+    <h1>إدارة البيانات</h1>
+  </header>
+
+  <!-- المحتوى الرئيسي -->
+  <main>
+    
+    <!-- زر العودة -->
+    <button onclick="backDashbord()" class="btn prev">&#10094;</button>
+
+    <!-- إحصائيات المستخدمين والرسائل -->
+    <section class="stats">
+      <div class="stat-box">
+        <h3>عدد المستخدمين</h3>
+        <span id="usernum">0</span>
+      </div>
+      <div class="stat-box">
+        <h3>عدد الرسائل</h3>
+        <span id="chatnumber">0</span>
+      </div>
+    </section>
+
+    <!-- الجداول -->
+    <section class="tables">
+
+      <!-- جدول المستخدمين -->
+      <div class="users">
+        <table>
+          <thead>
+            <tr>
+              <th>اسم المستخدم</th>
+              <th>البريد الإلكتروني</th>
+              <th>إجراءات</th>
+            </tr>
+          </thead>
+          <tbody id="usersTableBody">
+            <!-- سيتم تعبئتها بواسطة JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- جدول الرسائل -->
+      <div class="massig">
+        <table>
+          <thead>
+            <tr>
+              <th>المرسل</th>
+              <th>المحتوى</th>
+              <th>تعديل</th>
+              <th>حذف</th>
+            </tr>
+          </thead>
+          <tbody id="messagesTableBody">
+            <!-- سيتم تعبئتها بواسطة JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ربط ملف JS الخارجي -->
+  <script src="./../app.js" defer></script>
+
+</body>
+</html>

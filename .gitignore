@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+volatility-env/
+
+# Environment variables / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+
+# Uploads
+uploads/
+
+# Cache
+.cache/
+.pytest_cache/
+__pycache__/
+*.pyc
+TABLE_CHAT.DBF

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>LocalStorage</title>
+  <!-- ربط ملف CSS الخارجي -->
+  <link rel="stylesheet" href="./style-dashbord.css">
+</head>
+<body class="light">
+
+  <!-- حاوية إدارة LocalStorage -->
+  <div class="localstorg">
+    
+    <!-- عنوان الصفحة مع أيقونة -->
+    <h2><i class="bi bi-hdd"></i> إدارة LocalStorage</h2>
+
+    <!-- زر العودة -->
+    <button onclick="backDashbord()" class="btn prev">&#10094;</button>
+
+    <!-- مدخلات التحكم: مفتاح وقيمة وإضافة -->
+    <div class="controls">
+      <input id="keyInput" placeholder="Key" />
+      <input id="valueInput" placeholder="Value" />
+      <button id="btnAdd">Add</button>
+    </div>
+
+    <!-- جدول عرض العناصر المخزنة -->
+    <table id="storageTable">
+      <thead>
+        <tr>
+          <th>المفتاح</th>
+          <th>القيمة</th>
+          <th>إجراءات</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- سيتم تعبئة الصفوف بواسطة JavaScript -->
+      </tbody>
+    </table>
+
+  </div>
+
+  <!-- ربط ملف JS الخارجي -->
+  <script src="./../app.js" defer></script>
+
+</body>
+</html>
